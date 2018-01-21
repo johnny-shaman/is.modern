@@ -1,6 +1,5 @@
 (() =>{
     "use strict";
-
     const is = Object.assign((t) => {
         try {
             return t.constructor;
@@ -11,7 +10,7 @@
         "array": (t) => is(t) === Array,
         "blank": (t) => t === "",
         "boolean": (t) => is(t) === Boolean,
-        "defined": (t) => is(t) !== undefined,
+        "defined": (t) => glb[t] !== undefined || is(t) !== undefined,
         "function": (t) => is(t) === Function,
         "generator": (t) => is(t) === is(function* (){}),
         "iterable": (t) => is(t) === is(function* (){}()),
@@ -31,7 +30,11 @@
         "wroker": Object.getPrototypeOf(this.constructor.prototype).constructor.name === "WorkerGlobalScope"
     });
 
+    const glb = (is.worker && self)
+        || (is.server && process)
+        || (is.client && window);
+
     is.worker && (self.is = is);
     is.server && (module.exports = is);
-    is.client && (this.is = is);
+    is.client && (window.is = is);
 })();
