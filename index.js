@@ -23,7 +23,7 @@
         "self": (t) => is.valid(t) && is(t).prototype === t,
         "string": (t) => is(t) === String,
         "symbol": (t) => is(t) === Symbol,
-        "there": (t) => t.length !== 0,
+        "there": (t) => Object.keys(t).length !== 0,
         "valid": (t) => !is.blank(t) && !is.nan(t) && is(t) !== t,
         "client": this.constructor.name === "Window",
         "server": this.constructor.name !== "Window",
