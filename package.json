@@ -1,6 +1,6 @@
 {
   "name": "is.modern",
-  "version": "0.1.1",
+  "version": "0.1.15",
   "description": "MayBe Monad on Return constructor and useful functions",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/johnny-shaman/is.modern"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "keywords": [
     "is",
     "shorthand",
@@ -25,5 +24,13 @@
   "bugs": {
     "url": "git+https://github.com/johnny-shaman/is.modern/issues"
   },
-  "homepage": "https://github.com/johnny-shaman/is.modern#readme"
+  "homepage": "https://github.com/johnny-shaman/is.modern#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.9.1",
+    "karma": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
 }
