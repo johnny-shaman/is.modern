@@ -1,0 +1,29 @@
+{
+  "name": "is.modern",
+  "version": "0.0.0",
+  "description": "MayBe Monad on Return constructor and useful functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnny-shaman/is.modern"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "is",
+    "shorthand",
+    "shortcode",
+    "modern"
+  ],
+  "author": {
+    "name": "Noboru Okazaki"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "git+https://github.com/johnny-shaman/is.modern/issues"
+  },
+  "homepage": "https://github.com/johnny-shaman/is.modern#readme"
+}
