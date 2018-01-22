@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/johnny-shaman/is.modern.svg?branch=v0.5)](https://travis-ci.org/johnny-shaman/is.modern)
 [![npm version](https://badge.fury.io/js/is.modern.svg)](https://badge.fury.io/js/is.modern)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](./LICENSE)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1c30f575649d0f79088a/maintainability)](https://codeclimate.com/github/johnny-shaman/is.modern/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1c30f575649d0f79088a/test_coverage)](https://codeclimate.com/github/johnny-shaman/is.modern/test_coverage)
 
 MayBe Monad on Return constructor functions
 
