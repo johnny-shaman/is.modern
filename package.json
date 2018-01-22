@@ -26,11 +26,5 @@
   },
   "homepage": "https://github.com/johnny-shaman/is.modern#readme",
   "devDependencies": {
-    "jasmine-core": "^2.9.1",
-    "karma": "^2.0.0",
-    "karma-cli": "^1.0.1",
-    "karma-jasmine": "^1.1.1",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "phantomjs-prebuilt": "^2.1.16"
   }
 }
