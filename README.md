@@ -8,6 +8,21 @@
 
 MayBe Monad on Return constructor functions
 
+## usage of node.js...
+
+npm install is.modern
+and if use in script Ex.
+
+    const is = require("is.modern");
+
+## usage of browser
+
+git clone or download index.js;
+and if use on web Ex.
+
+    <script src="./is.modern/index.js"></script>
+    
+
 ## is(any) return to try any.constructor;
     
 As you like to writing on switch case ...
