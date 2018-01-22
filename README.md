@@ -6,7 +6,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1c30f575649d0f79088a/maintainability)](https://codeclimate.com/github/johnny-shaman/is.modern/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1c30f575649d0f79088a/test_coverage)](https://codeclimate.com/github/johnny-shaman/is.modern/test_coverage)
 
-MayBe Monad on Return constructor functions
+MayBe on Return constructor functions
 
 ## usage of node.js...
 
