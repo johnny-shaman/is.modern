@@ -1,10 +1,10 @@
 {
   "name": "is.modern",
-  "version": "0.1.2",
+  "version": "0.5",
   "description": "MayBe Monad on Return constructor and useful functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmin-node ./spec"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,5 @@
     "url": "git+https://github.com/johnny-shaman/is.modern/issues"
   },
   "homepage": "https://github.com/johnny-shaman/is.modern#readme",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

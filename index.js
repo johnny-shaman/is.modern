@@ -10,7 +10,7 @@
         "array": (t) => is(t) === Array,
         "blank": (t) => t === "",
         "boolean": (t) => is(t) === Boolean,
-        "defined": (t) => (is.string(t) && is.global[t] !== undefined) || is(t) !== undefined,
+        "defined": (t) => is(t) !== undefined,
         "function": (t) => is(t) === Function,
         "generator": (t) => is(t) === is(function* (){}),
         "iterable": (t) => is(t) === is(function* (){}()),
@@ -24,12 +24,10 @@
         "string": (t) => is(t) === String,
         "symbol": (t) => is(t) === Symbol,
         "there": (t) => Object.keys(t).length !== 0,
-        "valid": (t) => is.boolean(t) || !!t,
+        "valid": (t) => !is.nan(t) && !is.blank(t) && is(t) !== t,
         "client": this.constructor.name === "Window",
         "server": this.constructor.name !== "Window",
-        "global" : (is.server && process) || (is.client && window)
     });
-
 
     is.server && (module.exports = is);
     is.client && (window.is = is);
