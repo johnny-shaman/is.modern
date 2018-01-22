@@ -1,6 +1,6 @@
 {
   "name": "is.modern",
-  "version": "0.1.15",
+  "version": "0.1.2",
   "description": "MayBe Monad on Return constructor and useful functions",
   "main": "index.js",
   "scripts": {
