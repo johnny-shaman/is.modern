@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for workspace/spec/index.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">workspace/spec/</a> index.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>84/84</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>18/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>40/40</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">14×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const is = this.is || require("../index.js");
+&nbsp;
+describe("test of is", function () {
+    const cv = {
+        "array": [],
+        "true": true,
+        "false": false,
+        "undefined": undefined,
+        "function": <span class="fstat-no" title="function not covered" >function (){</span>},
+        "generator": <span class="fstat-no" title="function not covered" >function* (){</span>},
+        "iterable": <span class="fstat-no" title="function not covered" >function* (){</span>}(),
+        "null": null,
+        "number": 1,
+        "object": {},
+        "string": "abc",
+        "symbol": Symbol({}),
+    };
+    
+    const cf = {
+        "array": Array,
+        "true": Boolean,
+        "false": Boolean,
+        "undefined": undefined,
+        "function": Function,
+        "generator": (<span class="fstat-no" title="function not covered" >function* (){</span>}).constructor,
+        "iterable": (<span class="fstat-no" title="function not covered" >function* (){</span>}()).constructor,
+        "null": null,
+        "number": Number,
+        "object": Object,
+        "string": String,
+        "symbol": Symbol,
+    };
+&nbsp;
+    const pv = {
+        "array": [],
+        "blank": "",
+        "true": true,
+        "false": false,
+        "nan": NaN,
+        "undefined": undefined,
+        "function": <span class="fstat-no" title="function not covered" >function (){</span>},
+        "generator": <span class="fstat-no" title="function not covered" >function* (){</span>},
+        "iterable": <span class="fstat-no" title="function not covered" >function* (){</span>}(),
+        "null": null,
+        "number": 1,
+        "object": {},
+        "string": "abc",
+        "symbol": Symbol({}),
+    };
+&nbsp;
+    const pf = {
+        "array": Array,
+        "blank": "",
+        "true": Boolean,
+        "false": Boolean,
+        "undefined": false,
+        "nan": false,
+        "function": Function,
+        "generator": (<span class="fstat-no" title="function not covered" >function* (){</span>}).constructor,
+        "iterable": (<span class="fstat-no" title="function not covered" >function* (){</span>}()).constructor,
+        "null": false,
+        "number": Number,
+        "object": Object,
+        "string": String,
+        "symbol": Symbol,
+    };
+&nbsp;
+    class SuperTest {}
+    class Test extends SuperTest {}
+    
+<span class="fstat-no" title="function not covered" >    function tSuper () {</span>}
+    function tFunc () {}
+    
+    tFunc.prototype = Object.assign(
+        Object.create(
+            tSuper.prototype,
+            {constructor: Object.getOwnPropertyDescriptor(tFunc.prototype, "constructor")}
+        ),
+        tFunc.prototype,
+        {test <span class="fstat-no" title="function not covered" >() {</span>}}
+    );
+    
+    function ttFunc () {}
+    ttFunc.prototype = Object.assign(
+        Object.create(
+            SuperTest.prototype,
+            {constructor: Object.getOwnPropertyDescriptor(ttFunc.prototype, "constructor")}
+        ),
+        ttFunc.prototype,
+        {test <span class="fstat-no" title="function not covered" >() {</span>}}
+    );
+&nbsp;
+    it("is", () =&gt; Object.keys(cv).forEach((k) =&gt; expect(is(cv[k])).toBe(cf[k])));
+    it("is.array", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.array(pv[k])).toBe(pf[k] === Array)));
+    it("is.blank", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.blank(pv[k])).toBe(pf[k] === "")));
+    it("is.boolean", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.boolean(pv[k])).toBe(pf[k] === Boolean)));
+    it("is.defined", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.defined(pv[k])).toBe(k !== "undefined" &amp;&amp; true || false)));
+    it("is.function", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.function(pv[k])).toBe(pf[k] === Function)));
+    it("is.generator", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.generator(pv[k])).toBe(pf[k] === (<span class="fstat-no" title="function not covered" >function* (){</span>}).constructor)));
+    it("is.iterable", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.iterable(pv[k])).toBe(pf[k] === (<span class="fstat-no" title="function not covered" >function* (){</span>}()).constructor)));
+    it("is.held true 1", () =&gt; expect(is.held(new Test)(SuperTest)).toBe(true));
+    it("is.held true 2", () =&gt; expect(is.held(new tFunc)(tSuper)).toBe(true));
+    it("is.held true 3", () =&gt; expect(is.held(new ttFunc)(SuperTest)).toBe(true));
+    it("is.held false 1", () =&gt; expect(is.held(new tFunc)(SuperTest)).toBe(false));
+    it("is.held false 2", () =&gt; expect(is.held(new Test)(tSuper)).toBe(false));
+    it("is.held false 3", () =&gt; expect(is.held(new ttFunc)(tSuper)).toBe(false));
+    it("is.nan", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.nan(pv[k])).toBe(k ==="nan" &amp;&amp; true || false)));
+    it("is.null", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.null(pv[k])).toBe(k === "null" &amp;&amp; true || false)));
+    it("is.number", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.number(pv[k])).toBe(k === "nan" &amp;&amp; true || pf[k] === Number)));
+    it("is.object", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.object(pv[k])).toBe(pf[k] === Object)));
+    it("is.pure", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.pure(pv[k])).toBe(pf[k] === Object || pf[k] === Array)));
+    it("is.self true 1", () =&gt; expect(is.self(Test.prototype)).toBe(true));
+    it("is.self true 2", () =&gt; expect(is.self(tFunc.prototype)).toBe(true));
+    it("is.self false 1", () =&gt; expect(is.self(Test)).toBe(false));
+    it("is.self false 2", () =&gt; expect(is.self(tFunc)).toBe(false));
+    it("is.string", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.string(pv[k])).toBe(pf[k] === String || pf[k] === "")));
+    it("is.there true 1", () =&gt; expect(is.there({t: 1})).toBe(true));
+    it("is.there true 2", () =&gt; expect(is.there([4])).toBe(true));
+    it("is.there false 1", () =&gt; expect(is.there({})).toBe(false));
+    it("is.there false 2", () =&gt; expect(is.there([])).toBe(false));
+    it("is.valid", () =&gt; Object.keys(pv).forEach((k) =&gt; expect(is.valid(pv[k])).toBe(!!pf[k])));
+});
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 22 2018 06:55:02 GMT+0000 (UTC)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

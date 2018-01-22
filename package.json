@@ -4,7 +4,7 @@
   "description": "MayBe Monad on Return constructor and useful functions",
   "main": "index.js",
   "scripts": {
-    "test": "jasmin-node ./spec"
+    "test": "istanbul cover --include-all-sources jasmine-node ./spec"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,8 @@
 # is.modern
 
 [![Build Status](https://travis-ci.org/johnny-shaman/is.modern.svg?branch=v0.5)](https://travis-ci.org/johnny-shaman/is.modern)
-[![npm version][npm-badge]][npm-badge-url]
-[![License][license-badge]][license-badge-url]
+[![npm version](https://badge.fury.io/js/is.modern.svg)](https://badge.fury.io/js/is.modern)
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](./LICENSE)
 
 MayBe Monad on Return constructor functions
 
