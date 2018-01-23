@@ -1,26 +1,28 @@
 # is.modern
 
-[![Build Status](https://travis-ci.org/johnny-shaman/is.modern.svg?branch=v0.5)](https://travis-ci.org/johnny-shaman/is.modern)
-[![npm version](https://badge.fury.io/js/is.modern.svg)](https://badge.fury.io/js/is.modern)
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](./LICENSE)
+[![npm version](https://badge.fury.io/js/is.modern.svg)](https://badge.fury.io/js/is.modern)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1c30f575649d0f79088a/maintainability)](https://codeclimate.com/github/johnny-shaman/is.modern/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1c30f575649d0f79088a/test_coverage)](https://codeclimate.com/github/johnny-shaman/is.modern/test_coverage)
+[![Build Status](https://travis-ci.org/johnny-shaman/is.modern.svg?branch=v0.5)](https://travis-ci.org/johnny-shaman/is.modern)
 
 MayBe on Return constructor functions
 
 ## usage of node.js...
 
 npm install is.modern
+
 and if use in script Ex.
 
     const is = require("is.modern");
 
 ## usage of browser
 
-git clone or download index.js;
+git clone or download is.modern.js;
+
 and if use on web Ex.
 
-    <script src="./is.modern/index.js"></script>
+    <script src="./is.modern.js"></script>
     
 
 ## is(any) return to try any.constructor;
@@ -34,6 +36,16 @@ As you like to writing on switch case ...
         }
 
         case Array: {
+            ...;
+            break;
+        }
+
+        case MyClass: {
+            ...;
+            break;
+        }
+
+        case MyConstructor: {
             ...;
             break;
         }
