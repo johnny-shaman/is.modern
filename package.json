@@ -1,29 +1,88 @@
 {
-  "name": "is.modern",
-  "version": "0.5.6",
-  "description": "MayBe on Return constructor and useful functions",
-  "main": "index.js",
-  "scripts": {
-    "test": "istanbul cover --include-all-sources jasmine-node ./spec"
+  "_args": [
+    [
+      {
+        "raw": "is.modern",
+        "scope": null,
+        "escapedName": "is.modern",
+        "name": "is.modern",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/ubuntu/workspace"
+    ]
+  ],
+  "_from": "is.modern@latest",
+  "_inCache": true,
+  "_location": "/is.modern",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/is.modern-0.5.6.tgz_1516668592120_0.10617304919287562"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnny-shaman/is.modern"
+  "_npmUser": {
+    "name": "johnny_shaman",
+    "email": "johnny.shaman.saxophonist@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "is.modern",
+    "scope": null,
+    "escapedName": "is.modern",
+    "name": "is.modern",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/is.modern/-/is.modern-0.5.6.tgz",
+  "_shasum": "87a910159cc9e5316528c7d9ee64ab816eb0f33c",
+  "_shrinkwrap": null,
+  "_spec": "is.modern",
+  "_where": "/home/ubuntu/workspace",
+  "author": {
+    "name": "Noboru Okazaki"
+  },
+  "bugs": {
+    "url": "git+https://github.com/johnny-shaman/is.modern/issues"
   },
   "dependencies": {},
+  "description": "MayBe on Return constructor and useful functions",
+  "devDependencies": {
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "87a910159cc9e5316528c7d9ee64ab816eb0f33c",
+    "tarball": "https://registry.npmjs.org/is.modern/-/is.modern-0.5.6.tgz"
+  },
+  "gitHead": "b64aeb0e93d9dcf8c687ba1115d4ebd77809ec0c",
+  "homepage": "https://github.com/johnny-shaman/is.modern#readme",
   "keywords": [
     "is",
     "shorthand",
     "shortcode",
     "modern"
   ],
-  "author": {
-    "name": "Noboru Okazaki"
-  },
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "git+https://github.com/johnny-shaman/is.modern/issues"
+  "main": "is.modern.js",
+  "maintainers": [
+    {
+      "name": "johnny_shaman",
+      "email": "johnny.shaman.saxophonist@gmail.com"
+    }
+  ],
+  "name": "is.modern",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnny-shaman/is.modern.git"
   },
-  "homepage": "https://github.com/johnny-shaman/is.modern#readme",
-  "devDependencies": {}
+  "scripts": {
+    "test": "istanbul cover --include-all-sources jasmine-node ./spec"
+  },
+  "version": "0.5.61"
 }
