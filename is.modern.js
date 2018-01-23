@@ -1,6 +1,5 @@
 (() => {
     "use strict";
-    console.log(Object.getPrototypeOf(this.constructor.prototype));
     const is = Object.assign((t) => {
         try {
             return t.constructor;
