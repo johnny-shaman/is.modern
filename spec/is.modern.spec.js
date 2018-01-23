@@ -1,6 +1,6 @@
-const is = this.is || require("../is.modern.js");
 
 describe("test of is", function () {
+    const is = this.is || require("../index.js");
     const cv = {
         "array": [],
         "true": true,

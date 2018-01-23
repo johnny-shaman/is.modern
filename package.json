@@ -84,5 +84,5 @@
   "scripts": {
     "test": "istanbul cover --include-all-sources jasmine-node ./spec"
   },
-  "version": "0.5.70"
+  "version": "0.5.8"
 }
