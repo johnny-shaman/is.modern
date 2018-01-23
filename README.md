@@ -16,14 +16,24 @@ and if use in script Ex.
 
     const is = require("is.modern");
 
+
 ## usage of browser
 
 git clone or download is.modern.js;
 
 and if use on web Ex.
 
-    <script src="./is.modern.js"></script>
+    <script src="myjsFolder/is.modern.js"></script>
     
+
+## usage of workers
+
+git clone or download is.modern.js;
+
+and if use on woker Ex.
+
+    importScripts(myjsFolder/is.modern.js, ...other)
+
 
 ## is(any) return to try any.constructor;
     

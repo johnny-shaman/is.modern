@@ -119,5 +119,8 @@ describe("test of is", function () {
     it("is.there false 1", () => expect(is.there({})).toBe(false));
     it("is.there false 2", () => expect(is.there([])).toBe(false));
     it("is.valid", () => Object.keys(pv).forEach((k) => expect(is.valid(pv[k])).toBe(!!pf[k])));
+    it("is.client", () => Object.keys(pv).forEach((k) => expect(is.client).toBe(false)));
+    it("is.server", () => Object.keys(pv).forEach((k) => expect(is.server).toBe(true)));
+    it("is.worker", () => Object.keys(pv).forEach((k) => expect(is.worker).toBe(false)));
 });
 

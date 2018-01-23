@@ -1,5 +1,6 @@
 (() => {
     "use strict";
+    console.log(Object.getPrototypeOf(this.constructor.prototype));
     const is = Object.assign((t) => {
         try {
             return t.constructor;
@@ -26,9 +27,11 @@
         "there": (t) => Object.keys(t).length !== 0,
         "valid": (t) => !is.nan(t) && !is.blank(t) && is(t) !== t,
         "client": this.constructor.name === "Window",
-        "server": this.constructor.name !== "Window",
+        "server": this.constructor.name === "Object",
+        "worker": Object.getPrototypeOf(this.constructor.prototype) !== null && Object.getPrototypeOf(this.constructor.prototype).constructor.name === "WorkerGlobalScope"
     });
 
     is.server && (module.exports = is);
     is.client && (window.is = is);
+    is.worker && (self.is = is);
 })();
