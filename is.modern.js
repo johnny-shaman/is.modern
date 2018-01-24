@@ -30,5 +30,6 @@
         "worker": Object.getPrototypeOf(this.constructor.prototype) !== null && Object.getPrototypeOf(this.constructor.prototype).constructor.name === "WorkerGlobalScope"
     });
 
-    is.server && Object.assign(this, is) || Object.assign(this, {is: is});
+    is.server && (module.exports = is);
+    is.server || Object.assign(this, {is: is});
 })();
