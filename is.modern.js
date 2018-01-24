@@ -31,5 +31,5 @@
     });
 
     is.server && (module.exports = is);
-    is.server || Object.assign(this, {is: is});
+    is.server || Object.assign(this, {is});
 })();
