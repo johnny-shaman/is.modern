@@ -63,8 +63,19 @@
   "keywords": [
     "is",
     "shorthand",
+    "shortHand",
     "shortcode",
-    "modern"
+    "shortCode",
+    "typeCheck",
+    "typecheck",
+    "type check",
+    "inhelitcheck",
+    "inhelitCheck",
+    "inhelit check",
+    "worker",
+    "browser",
+    "server",
+    "node"
   ],
   "license": "GPL-3.0",
   "main": "is.modern.js",
@@ -84,5 +95,5 @@
   "scripts": {
     "test": "istanbul cover --include-all-sources jasmine-node ./spec"
   },
-  "version": "0.6.1"
+  "version": "0.6.01"
 }

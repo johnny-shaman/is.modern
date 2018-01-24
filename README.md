@@ -110,7 +110,8 @@ As you like to writing on switch case ...
     is.held(me)(Super)  //<- Check instanceof Super
     is.self(any)        //<- Check object have a right constructor infomation
     
-## node.js or browser
+## node.js or browser or worker
 
     is.client
     is.server
+    is.worker
