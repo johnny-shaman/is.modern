@@ -23,7 +23,7 @@ git clone or download is.modern.js;
 
 and if use on web Ex.
 
-    <script src="myjsFolder/is.modern.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/is.modern/is.modern.js"></script>
     
 
 ## usage of workers
